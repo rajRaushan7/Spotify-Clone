@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+body{
+    color: white ;;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    background: url("Images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    cursor: default;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    cursor: default;
+    opacity: 0.9;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 65px;
+    align-items: center;
+    /* justify-content: center; */
+}
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+.brand img{
+    height: 44px;
+    padding: 0 8px;
+}
+
+.container{
+    min-height: 65vh;
+    max-height: 65vh;
+    background-color: rgba(0, 0, 0, 0.546);
+    display: flex;
+    flex-direction: column;
+    margin: 21.3px auto;
+    width: 90%;
+    border-radius: 13px;
+    padding: 34px;
+    z-index: 1;
+    overflow: scroll;
+}
+.container h1{
+    font-weight: 400;
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center ;
+}
+
+#myProgressBar{
+    width: 60vw;
+    cursor: pointer;
+}
+
+.icons{
+    margin-bottom: 14px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    transition: 0.2s;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+#masterPlay{
+    font-size: 40px;
+    transition: 0.3s;
+}
+.icons i{
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.songBanner{
+    height: 180px;
+    width: 180px;
+    border-radius: 16px;
+}
+.songItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 20px;
+    background-color: rgba(44, 44, 44,0.7);
+    border-radius: 16px;
+    width: 180px;
+    height: 250px;
+    margin: 30px;
+    transition: 0.4s;
+}
+.songItem:hover{
+    background-color: rgb(30,30,30);
+    transform: scale(1.02);
+}
+.playBtnSong{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29, 185, 84);
+    color: black;
+    min-width: 45px;
+    min-height: 45px;
+    font-size: 25px;
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 160px;
+    top: 170px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.songItem:hover .playBtnSong{
+    opacity: 1;
+    visibility: visible;
+}
+.playBtnSong:hover{
+    transform: scale(1.1);
+}
+.songTitle{
+    padding: 10px 0;
+    cursor: default;
+    font-weight: 400;
+    font-size: 20px;
+}
+.songDes{
+    font-weight: 200;
+    cursor: default;
+    opacity: 0.74;
+    font-size: 14px;
+    align-items: start;
+}
+
+.musicList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.songPlayerInfo{
+    font-size: 15px;
+    font-weight: 300;
+    position: absolute;
+    left: 50px;
+    display: flex;
+    align-items: center;
+}
+.songPlayerInfo img{
+    height: 40px;
+    padding: 10px;
+    border-radius: 15px;
+}
+.gif{
+    height: 70px;
+    position: absolute;
+    right: 50px;
+    top: 18px;
+    opacity: 0;
+    transition: 0.9s;
+}
