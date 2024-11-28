@@ -95,6 +95,7 @@ nav ul li{
     align-items: center;
 }
 .btn{
+    color: white;
     transition: 0.2s;
     opacity: 0.6;
 }
@@ -186,7 +187,7 @@ nav ul li{
     display: flex;
     align-items: center;
 }
-#songPlayerInfo img{
+#songInfoBanner{
     height: 40px;
     padding: 10px;
     border-radius: 15px;
@@ -202,4 +203,10 @@ nav ul li{
 
 #myProgressBar{
     height: 4px;
+    opacity: transparent;
+}
+
+.active{
+    color: rgb(17, 207, 83);
+    opacity: 1;
 }
