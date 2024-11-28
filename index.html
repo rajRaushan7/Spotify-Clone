@@ -6,11 +6,12 @@
     <title>Spotyfy</title> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/logo.png">
 </head>
 <body>
     <nav>
         <ul>
-            <li class="brand"><img src="images/logo.png" alt="spotify_logo"> Spotify</li>
+            <li class="brand"><img src="Images/logo.png" alt="spotify_logo"> Spotify</li>
             <li>Home</li>
             <li>About</li>
         </ul>
@@ -90,12 +91,17 @@
 
     <div class="bottom">
         <div class="icons">
-            <div id="songPlayerInfo">Chanakya</div>
+            
+            <div id="songPlayerInfo">
+                <img src="Images/0.jpg" id="songInfoBanner">
+                Chanakya</div>
+            <i class="fa-solid fa-repeat btn" id="repeat"></i>
             <i class="fa-solid fa-step-backward btn" id="prev"></i>
             <i class="fa-solid fa-backward-fast btn" id="back"></i>
             <i class="far fa-3x fa-play-circle btn" id="masterPlay"></i>
             <i class="fa-solid fa-forward-fast btn" id="forward"></i>
             <i class="fa-solid fa-step-forward btn next" id="next"></i>
+            <i class="fa-solid fa-shuffle btn" id="shuffle"></i>
             <img class="gif" id="gif" src="Images/gif.gif">
         </div>
         <input type="range" name="range" value="0" id="myProgressBar" min="0" max="100">
