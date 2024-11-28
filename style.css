@@ -83,7 +83,7 @@ nav ul li{
 }
 
 #myProgressBar{
-    width: 60vw;
+    width: 50vw;
     cursor: pointer;
 }
 
@@ -96,9 +96,11 @@ nav ul li{
 }
 .btn{
     transition: 0.2s;
+    opacity: 0.6;
 }
 .btn:hover{
     transform: scale(1.1);
+    opacity: 1;
 }
 #masterPlay{
     font-size: 40px;
@@ -124,7 +126,7 @@ nav ul li{
     border-radius: 16px;
     width: 180px;
     height: 250px;
-    margin: 30px;
+    margin: 25px;
     transition: 0.4s;
 }
 .songItem:hover{
@@ -173,8 +175,10 @@ nav ul li{
 .musicList{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.songPlayerInfo{
+#songPlayerInfo{
     font-size: 15px;
     font-weight: 300;
     position: absolute;
@@ -182,7 +186,7 @@ nav ul li{
     display: flex;
     align-items: center;
 }
-.songPlayerInfo img{
+#songPlayerInfo img{
     height: 40px;
     padding: 10px;
     border-radius: 15px;
@@ -194,4 +198,8 @@ nav ul li{
     top: 18px;
     opacity: 0;
     transition: 0.9s;
+}
+
+#myProgressBar{
+    height: 4px;
 }
